@@ -1,0 +1,32 @@
+<h2>Productos</h2>
+
+<table border="1">
+
+  <tr class="table-header">
+    <th>ID</th>
+    <th>Nombre</th>
+    <th>Precio</th>
+    <th>Acción</th>
+  </tr>
+
+  @for (producto of productos; track producto.id) {
+  <tr class="table-row">
+
+    <td>{{ producto.id }}</td>
+
+    <td>{{ producto.nombre }}</td>
+
+    <td>{{ producto.precio | currency }}</td>
+
+     <td>
+
+
+     <button class="btn btn-primary"
+        [routerLink]="['/productos', producto.id]">
+        Ver detalle
+      </button>
+    </td> 
+
+  </tr>
+  }
+</table>

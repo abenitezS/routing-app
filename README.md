@@ -1,59 +1,107 @@
-# RoutingApp
+##Angular Avanzado - Routing y Navegación
+## Descripción del proyecto
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.12.
+Este proyecto fue desarrollado con Angular 21 utilizando Standalone Components y tiene como objetivo aplicar conceptos avanzados de enrutamiento (Routing) en Angular.
 
-## Development server
+La aplicación implementa:
+- ✅Navegación entre vistas mediante Angular Router.
+- ✅Lazy Loading de componentes.
+- ✅Rutas dinámicas utilizando parámetros (/productos/:id).
+- ✅Uso de routerLink y router-outlet.
+- ✅Persistencia de la última sección visitada mediante localStorage.
+- ✅Redirección automática a la última ruta visitada al recargar la aplicación.
 
-To start a local development server, run:
-
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+## Tecnologías utilizadas
+Angular 21
+TypeScript
+Angular Router
+HTML5
+CSS3
+LocalStorage API
+## Instalación y ejecución
+### 1. Clonar el repositorio
 
 ```bash
-ng build
+git clone https://github.com/abenitezS/productos-app.git
+cd productos-app
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+### 2. Instalar dependencias
 
 ```bash
-ng test
+npm install --legacy-peer-deps
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+### 3. Ejecutar en modo desarrollo
 
 ```bash
-ng e2e
+npm run start 
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Abrir en el navegador: [http://localhost:4200](http://localhost:4200)
 
-## Additional Resources
+---
+## Funcionalidades implementadas
+- Inicio
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Pantalla principal de bienvenida.
+
+- Usuarios
+
+- Visualización de una lista de usuarios mediante navegación interna.
+
+- Productos
+
+- - Visualización de productos disponibles.
+
+- - Detalle dinámico
+
+Cada producto posee una ruta dinámica:
+
+/productos/:id
+
+que permite visualizar información específica según el identificador recibido.
+
+Persistencia de navegación
+
+La aplicación almacena la última ruta visitada en localStorage y la recupera automáticamente al volver a cargar la página.
+
+Capturas de pantalla
+- Inicio
+
+(Insertar captura de pantalla de la página principal)
+
+- Usuarios
+
+(Insertar captura de pantalla de la sección Usuarios)
+
+- Productos
+
+(Insertar captura de pantalla de la sección Productos)
+
+- Detalle de Producto
+
+(Insertar captura de pantalla de la ruta dinámica /productos/)
+
+## Despliegue
+Plataforma elegida
+
+(Reemplazar por la URL real una vez realizado el despliegue.)
+
+## Créditos del autor
+
+- **Estudiante:** Alicia Benitez
+- **Curso:** Angular Intermedio
+- **Unidad:** Módulo 1 — Unidad 4: Aplicación modular con rutas y almacenamiento en navegador
+
+--- 
+
+## Bibliografía y fuentes consultadas
+### Documentación oficial
+- Angular. Routing Guide. https://angular.dev/guide/routing
+- Angular. Standalone Components. https://angular.dev/guide/components/importing
+- Angular. Lazy Loading. https://angular.dev/guide/routing/common-router-tasks
+- Angular. Deployment Guide. https://angular.dev/tools/cli/deployment
+## Referencias adicionales
+- MDN Web Docs. localStorage API. https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+- MDN Web Docs. sessionStorage API. https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage
