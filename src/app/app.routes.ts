@@ -4,25 +4,25 @@ export const routes: Routes = [
   {
     path: '',
     loadComponent: () =>
-      import('./app/pages/home/home')
+      import('./pages/home/home')
         .then(c => c.Home)
   },
   {
     path: 'usuarios',
     loadComponent: () =>
-      import('./app/pages/usuarios/usuarios/usuarios')
+      import('./pages/usuarios/usuarios/usuarios')
         .then(c => c.Usuarios)
   },
   {
     path: 'productos',
     loadComponent: () =>
-      import('./app/pages/productos/productos/productos')
+      import('./pages/productos/productos/productos')
         .then(c => c.Productos)
   },
   {
     path: 'productos/:id',
     loadComponent: () =>
-      import('./app/pages/productos/producto-detalle/producto-detalle')
+      import('./pages/productos/producto-detalle/producto-detalle')
         .then(c => c.ProductoDetalle)
   },
   {

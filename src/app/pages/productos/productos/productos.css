@@ -207,7 +207,7 @@
 
 .tabla-productos thead {
   background: var(--primario);
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .tabla-productos th {
@@ -235,23 +235,7 @@
 .col-precio { font-family: monospace; font-size: 0.95rem; }
 .col-fecha { color: var(--texto-suave); font-size: 0.85rem; }
 
-/* Badge categoría */
-.badge-categoria {
-  background: #eff6ff;
-  color: #1d4ed8;
-  padding: 0.2rem 0.6rem;
-  border-radius: 99px;
-  font-size: 0.78rem;
-  font-weight: 600;
-  white-space: nowrap;
-}
 
-/* Columna descuento */
-.col-descuento {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-}
 
 .precio-original {
   text-decoration: line-through;
@@ -265,15 +249,6 @@
   font-family: monospace;
 }
 
-.badge-descuento {
-  background: #fef9c3;
-  color: #854d0e;
-  padding: 0.1rem 0.4rem;
-  border-radius: 6px;
-  font-size: 0.75rem;
-  font-weight: 700;
-  align-self: flex-start;
-}
 
 /* ===== Pie ===== */
 .pie {

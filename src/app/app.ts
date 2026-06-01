@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import { Router, RouterOutlet, RouterLink, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs';
-import { StorageService } from './sevices/storage.service';
+import { StorageService } from '../sevices/storage.service';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, RouterLink],
   templateUrl: './app.html',
+  styleUrl: '../styles.css'
 
 })
 export class App {

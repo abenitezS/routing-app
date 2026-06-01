@@ -1,6 +1,6 @@
-<h2>Productos</h2>
+<h2 class="form-title">Productos</h2>
 
-<table border="1">
+<table class ="tabla-productos" border="1">
 
   <tr class="table-header">
     <th>ID</th>
@@ -12,11 +12,11 @@
   @for (producto of productos; track producto.id) {
   <tr class="table-row">
 
-    <td>{{ producto.id }}</td>
+    <td class="col-id">{{ producto.id }}</td>
 
-    <td>{{ producto.nombre }}</td>
+    <td class="col-nombre">{{ producto.nombre }}</td>
 
-    <td>{{ producto.precio | currency }}</td>
+    <td class="col-precio">{{ producto.precio | currency }}</td>
 
      <td>
 

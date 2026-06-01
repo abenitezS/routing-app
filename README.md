@@ -66,7 +66,7 @@ Persistencia de navegación
 
 La aplicación almacena la última ruta visitada en localStorage y la recupera automáticamente al volver a cargar la página.
 
-Capturas de pantalla
+## Capturas de pantalla
 - Inicio
 
 (Insertar captura de pantalla de la página principal)
