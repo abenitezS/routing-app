@@ -77,7 +77,7 @@ Plataforma elegida
 ## Créditos del autor
 
 - **Estudiante:** Alicia Benitez
-- **Curso:** Angular Intermedio
+- **Curso:** Angular Avanzado
 - **Unidad:** Módulo 1 — Unidad 4: Aplicación modular con rutas y almacenamiento en navegador
 
 --- 
