@@ -54,20 +54,20 @@ Abrir en el navegador: [http://localhost:4200](http://localhost:4200)
 
 ## Capturas de pantalla
 - Inicio
-
-(Insertar captura de pantalla de la página principal)
+![Captura de pantalla](src/assets/capturas/Captura1.png)      
+Pagina de inicio 
 
 - Usuarios
-
-(Insertar captura de pantalla de la sección Usuarios)
+![Captura de pantalla](src/assets/capturas/Captura2.png)      
+ Muestra  la sección Usuarios
 
 - Productos
-
-(Insertar captura de pantalla de la sección Productos)
+![Captura de pantalla](src/assets/capturas/Captura3.png)      
+Muestra la  sección Productos
 
 - Detalle de Producto
-
-(Insertar captura de pantalla de la ruta dinámica /productos/)
+![Captura de pantalla](src/assets/capturas/Captura4.png)      
+Muestas  pantalla de la ruta dinámica /productos/:id
 
 ## Despliegue
 Plataforma elegida
