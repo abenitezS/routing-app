@@ -1,10 +1,23 @@
+<div class="usuarios-container">
 
-<h2>Usuarios</h2>
+  <div class="header">
+    <h2>👥 Usuarios</h2>
+    <p>Listado de usuarios registrados en la aplicación.</p>
+  </div>
 
-<ul>
-  @for (usuario of usuarios; track usuario) {
-    <li>
-      {{ usuario }}
-    </li>
-  }
-</ul>
+  <div class="usuarios-grid">
+    @for (usuario of usuarios; track usuario) {
+      <div class="usuario-card">
+        <div class="avatar">
+          {{ usuario.charAt(0).toUpperCase() }}
+        </div>
+
+        <div class="info">
+          <h3>{{ usuario }}</h3>
+          <p>Usuario activo</p>
+        </div>
+      </div>
+    }
+  </div>
+
+</div>

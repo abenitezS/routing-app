@@ -42,29 +42,15 @@ Abrir en el navegador: [http://localhost:4200](http://localhost:4200)
 
 ---
 ## Funcionalidades implementadas
-- Inicio
+- Inicio: Pantalla principal de bienvenida.
 
-- Pantalla principal de bienvenida.
+- Usuarios: Visualización de una lista de usuarios mediante navegación interna.
 
-- Usuarios
+- Productos: Visualización de productos disponibles.
 
-- Visualización de una lista de usuarios mediante navegación interna.
+- Detalle dinámico: Cada producto posee una ruta dinámica: /productos/:id  que permite visualizar información específica según el identificador recibido.
 
-- Productos
-
-- - Visualización de productos disponibles.
-
-- - Detalle dinámico
-
-Cada producto posee una ruta dinámica:
-
-/productos/:id
-
-que permite visualizar información específica según el identificador recibido.
-
-Persistencia de navegación
-
-La aplicación almacena la última ruta visitada en localStorage y la recupera automáticamente al volver a cargar la página.
+- Persistencia de navegación: La aplicación almacena la última ruta visitada en localStorage y la recupera automáticamente al volver a cargar la página.
 
 ## Capturas de pantalla
 - Inicio

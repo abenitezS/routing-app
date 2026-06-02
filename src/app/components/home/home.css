@@ -1,0 +1,59 @@
+.home-container {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: #f4f6f9;
+}
+
+.welcome-card {
+  max-width: 1000px;
+  width: 100%;
+  text-align: center;
+}
+
+.welcome-card h1 {
+  font-size: 3rem;
+  color: #1976d2;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 3rem;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.feature-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,.1);
+  transition: all .3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+}
+
+.feature-card span {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  color: #1976d2;
+  margin-bottom: .5rem;
+}
+
+.feature-card p {
+  color: #666;
+}

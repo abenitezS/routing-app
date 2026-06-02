@@ -1,32 +1,53 @@
-<h2 class="form-title">Productos</h2>
+<div class="productos-container">
 
-<table class ="tabla-productos" border="1">
+  <div class="header">
+    <h2>📦 Productos</h2>
+    <p>Consulta el catálogo de productos disponibles.</p>
+  </div>
 
-  <tr class="table-header">
-    <th>ID</th>
-    <th>Nombre</th>
-    <th>Precio</th>
-    <th>Acción</th>
-  </tr>
+  <div class="tabla-wrapper">
 
-  @for (producto of productos; track producto.id) {
-  <tr class="table-row">
+    <table class="tabla-productos">
 
-    <td class="col-id">{{ producto.id }}</td>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Precio</th>
+          <th>Acción</th>
+        </tr>
+      </thead>
 
-    <td class="col-nombre">{{ producto.nombre }}</td>
+      <tbody>
+        @for (producto of productos; track producto.id) {
+        <tr>
 
-    <td class="col-precio">{{ producto.precio | currency }}</td>
+          <td class="col-id">
+            #{{ producto.id }}
+          </td>
 
-     <td>
+          <td class="col-nombre">
+            {{ producto.nombre }}
+          </td>
 
+          <td class="col-precio">
+            {{ producto.precio | currency }}
+          </td>
 
-     <button class="btn btn-primary"
-        [routerLink]="['/productos', producto.id]">
-        Ver detalle
-      </button>
-    </td> 
+          <td>
+            <button
+              class="btn-detalle"
+              [routerLink]="['/productos', producto.id]">
+              🔍 Ver detalle
+            </button>
+          </td>
 
-  </tr>
-  }
-</table>
+        </tr>
+        }
+      </tbody>
+
+    </table>
+
+  </div>
+
+</div>
