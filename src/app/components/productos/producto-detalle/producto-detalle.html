@@ -1,7 +1,51 @@
-<h2>Detalle del Producto</h2>
+<div class="detalle-container">
 
-<p>ID recibido: {{ id }}</p>
+  <div class="producto-card">
 
-<button routerLink="/productos">
-  Volver
-</button>
+    <div class="imagen-container">
+      <img
+      [src]="producto.imagen"
+        alt="{{ producto.nombre }}"
+       class="producto-imagen"
+      >
+
+    <div class="producto-info">
+
+      <span class="badge">ID: {{ id }}</span>
+
+      <h2>{{ producto.nombre }}</h2>
+
+      <p class="precio">
+        {{ producto.precio | currency }}
+      </p>
+
+      <p class="descripcion">
+        {{ producto.Descripcion }}
+      </p>
+
+      <div class="datos">
+        <div class="dato">
+          <strong>Marca</strong>
+          <span>{{ producto.marca }}</span>
+        </div>
+
+        <div class="dato">
+          <strong>Modelo</strong>
+          <span>{{ producto.modelo }}</span>
+        </div>
+
+        <div class="dato">
+          <strong>Stock</strong>
+          <span>{{ producto.stock }}</span>
+        </div>
+      </div>
+
+      <button class="btn-volver" routerLink="/productos">
+        ← Volver a Productos
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
