@@ -8,7 +8,7 @@ import { StorageService } from '../sevices/storage.service';
   standalone: true,
   imports: [RouterOutlet, RouterLink],
   templateUrl: './app.html',
-  styleUrl: '../styles.css'
+  styleUrl: './app.css'
 
 })
 export class App {

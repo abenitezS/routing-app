@@ -4,8 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-usuarios',
   standalone: true,
   imports: [],
-  templateUrl: './usuarios.html',
-  styleUrl: './usuarios.css',
+  templateUrl: 'usuarios.html',
+   styleUrl: './usuarios.css',
 })
 export class Usuarios { 
   usuarios = [

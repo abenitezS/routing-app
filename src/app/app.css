@@ -1,0 +1,62 @@
+/* Fondo general */
+:host {
+  display: block;
+  min-height: 100vh;
+  background: #f4f6f9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Cabecera */
+.header {
+  background: linear-gradient(135deg, #1976d2, #0d47a1);
+  padding: 20px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Título */
+.title {
+  margin: 0 0 15px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Navegación */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+/* Hover */
+.nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Ruta activa */
+.nav a.active {
+  background: white;
+  color: #1976d2;
+  font-weight: bold;
+}
+
+/* Contenido */
+.container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
