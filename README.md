@@ -70,9 +70,9 @@ Muestra la  sección Productos
 Muestas  pantalla de la ruta dinámica /productos/:id
 
 ## Despliegue
-Plataforma elegida
+- Plataforma elegida: GitHub Pages
 
-(Reemplazar por la URL real una vez realizado el despliegue.)
+https://abenitezs.github.io/routing-app/
 
 ## Créditos del autor
 
