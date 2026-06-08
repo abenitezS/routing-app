@@ -70,9 +70,9 @@ Muestra la  sección Productos
 Muestas  pantalla de la ruta dinámica /productos/:id
 
 ## Despliegue
-- Plataforma elegida: GitHub Pages
+- Plataforma elegida: Vercel
 
-https://abenitezs.github.io/routing-app/
+https://routing-app-beta.vercel.app/productos
 
 ## Créditos del autor
 
