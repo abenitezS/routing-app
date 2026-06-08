@@ -1,7 +1,9 @@
 import { CurrencyPipe } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-
+import { ProductosService } from '../../../sevices/productos.service';
+import { Producto } from '../../models/producto';
+import { inject } from '@angular/core';
 
 @Component({
   selector: 'app-productos',
@@ -12,38 +14,20 @@ import { RouterLink } from '@angular/router';
 })
 export class Productos {
   
-  productos = [
-    {
-      id: 1,
-      nombre: 'Notebook',
-      precio: 3568000.45,
-      imagen: 'assets/notebook.png',
-      Descripcion : 'Una notebook potente y ligera, ideal para trabajar y estudiar.',
-      modelo : 'XPS 13',
-      marca : 'Dell',
-      stock : 10  
+  productosList: Producto[] = [];
 
-    },
-    {
-      id: 2,
-      nombre: 'Mouse',
-      precio: 50000.99,
-      imagen: "assets/mouse.jpg",
-      Descripcion : 'Un mouse ergonómico con alta precisión, perfecto para largas horas de uso.', 
-      modelo : 'MX Master 3',
-      marca : 'Logitech',
-      stock : 25
-    },
-    {
-      id: 3,
-      nombre: 'Teclado',
-      precio: 90000.75,
-      imagen: "assets/teclado.png",
-      Descripcion : 'Un teclado mecánico con retroiluminación RGB, ideal para gamers y programadores.',     
-      modelo : 'K95 RGB Platinum',
-      marca : 'Corsair',
-      stock : 15  
-    }
-  ];
+  //Forma de instanciar mi servicio EN ESTE COMPONENTE
+  //inject a partir de angular +17
+  private productoService = inject(ProductosService)
+
+  //Se activa cuando el componente se inicializo
+  ngOnInit(): void{
+    this.cargarProductos()
+  }
+
+  //Como cargar usuarios del servicio al componente
+  cargarProductos(): void {
+    this.productosList = this.productoService.getProducts()
+  }
 
 }

@@ -4,8 +4,8 @@
 
     <div class="imagen-container">
       <img
-      [src]="producto.imagen"
-        alt="{{ producto.nombre }}"
+      [src]="producto?.imagen"
+        alt="{{ producto?.nombre }}"
        class="producto-imagen"
       >
 
@@ -13,30 +13,30 @@
 
       <span class="badge">ID: {{ id }}</span>
 
-      <h2>{{ producto.nombre }}</h2>
+      <h2>{{ producto?.nombre }}</h2>
 
       <p class="precio">
-        {{ producto.precio | currency }}
+        {{ producto?.precio | currency }}
       </p>
 
       <p class="descripcion">
-        {{ producto.Descripcion }}
+        {{ producto?.Descripcion }}
       </p>
 
       <div class="datos">
         <div class="dato">
           <strong>Marca</strong>
-          <span>{{ producto.marca }}</span>
+          <span>{{ producto?.marca }}</span>
         </div>
 
         <div class="dato">
           <strong>Modelo</strong>
-          <span>{{ producto.modelo }}</span>
+          <span>{{ producto?.modelo }}</span>
         </div>
 
         <div class="dato">
           <strong>Stock</strong>
-          <span>{{ producto.stock }}</span>
+          <span>{{ producto?.stock }}</span>
         </div>
       </div>
 
