@@ -72,7 +72,7 @@ Muestas  pantalla de la ruta dinámica /productos/:id
 ## Despliegue
 - Plataforma elegida: Vercel
 
-https://routing-app-beta.vercel.app/productos
+https://routing-app-beta.vercel.app
 
 ## Créditos del autor
 
